@@ -19,7 +19,7 @@ web_root = os.path.abspath('.')
 path = os.path.join(web_root, 'model/mini.model')
 # path = '/home/yikang/Desktop/TextData/Project01-NLP-LTP/nlp-project01/mini_model/mini.model'
 
-LTP_DATA_DIR = os.path.join(web_root, 'ltp_data_v3.4.0')  # ltp模型目录的路径
+LTP_DATA_DIR = os.path.join(web_root, 'ltp')  # ltp模型目录的路径
 pos_model_path = os.path.join(LTP_DATA_DIR, 'pos.model')  # 词性标注模型路径，模型名称为`pos.model`
 par_model_path = os.path.join(LTP_DATA_DIR, 'parser.model')  # 依存句法分析模型路径，模型名称为`parser.model`
 ner_model_path = os.path.join(LTP_DATA_DIR, 'ner.model')  # 命名实体识别模型路径，模型名称为`pos.model`
