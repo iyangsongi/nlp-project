@@ -18,6 +18,7 @@ def about():
 @app.route('/autoupdate')
 def auto_update():
     os.system('cd /home/project-01/DayandNight/DN01')
+    os.system('git reset --hard')
     os.system('git pull origin master')
     print('git pull finish')
     os.system('service dn01 start')
