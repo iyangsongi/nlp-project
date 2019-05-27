@@ -16,8 +16,7 @@ def about():
     return render_template('about.html')
 
 @app.route('/autoupdate')
-def auto_update(env,start_response):
-    start_response('200 OK', [('Content-Type', 'text/html')])
+def auto_update():
     os.system('cd /home/project-01/DayandNight/DN01')
     os.system('git pull origin master')
     print('git pull finish')
