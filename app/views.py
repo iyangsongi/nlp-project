@@ -15,7 +15,7 @@ def index(name=None):
 def about():
     return render_template('about.html')
 
-@app.route('/autoupdate')
+@app.route('/autoupdate',method=['POST'])
 def auto_update():
     os.system('cd /home/project-01/DayandNight/DN01')
     os.system('git reset --hard')
