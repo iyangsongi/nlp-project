@@ -3,7 +3,7 @@
 #@author:yangsong
 from flask import render_template
 from app import app
-
+import os
 
 @app.route('/index')
 @app.route('/index/<name>')
