@@ -15,6 +15,7 @@ def index(name=None):
 def about():
     return render_template('about.html')
 
+#自动化更新github代码
 @app.route('/autoupdate',methods=['POST'])
 def auto_update():
     os.system('cd /home/project-01/DayandNight/DN01')
