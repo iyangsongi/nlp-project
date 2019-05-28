@@ -23,4 +23,4 @@ def auto_update():
     print('git pull finish')
     os.system('service dn01 start')
     os.system('service nginx restart')
-    return 'hello webhook'
+    return app.make_response(('Hello, Webhooks', 200))
